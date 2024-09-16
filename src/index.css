@@ -1,0 +1,135 @@
+body {
+  font: 14px "Century Gothic", Futura, sans-serif;
+  margin: 20px;
+  height: 100%;
+  background-image: url("./assets/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.maze {
+  position: relative;
+}
+
+.game-completed {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 64px;
+  font-weight: bold;
+  color: #f65a4a;
+  background-color: rgba(255, 0, 0, 0.2);
+  padding: 20px 0;
+  width: 100%;
+  text-align: center;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px dashed #f65a4a;
+}
+
+.game-completed .restart-btn {
+  margin-left: 10px;
+}
+.restart-btn {
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: #4caf50;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.restart-btn:hover {
+  background-color: #45a049;
+}
+
+.start-game-text {
+  font-size: 24px;
+  font-weight: bold;
+  color: #000000;
+  left: 50%;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+  text-align: center;
+}
+
+ol,
+ul {
+  padding-left: 30px;
+}
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.square {
+  background: lightcyan;
+  border: 1px solid #999;
+  float: left;
+  font-size: 60px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 70px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 70px;
+}
+
+img {
+  width: 50px;
+  height: 50px;
+}
+.square:focus {
+  outline: none;
+}
+
+.kbd-navigation .square:focus {
+  background: #ddd;
+}
+
+.game {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-left: -100px;
+}
+
+.title {
+  font-size: 48px; /* Large font size for the title */
+  font-weight: bold; /* Bold text */
+  color: #f65a4a; /* Red color for emphasis (you can change this) */
+  text-align: center; /* Center-align the text */
+  margin-bottom: 10px;
+  top: 20px; /* Place 20px from the top of the page */
+  left: 50%; /* Center horizontally */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.8
+  ); /* Light transparent white background */
+  padding: 10px 20px; /* Padding around the text */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Light shadow */
+  z-index: 100; /* Ensure it is on top */
+  width: auto;
+}
+
+.game-info {
+  margin-left: 20px;
+}
